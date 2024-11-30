@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background for the body */
+}
+
+.nav {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.fir {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(90, 121, 145);
+    padding: 10px;
+}
+
+.first {
+    width: 30%; /* Increased width for better layout */
+    height: auto; /* Let the height adjust based on content */
+    border: 5px solid #333; /* Darker border for the main box */
+    border-radius: 20px;
+    background-color: #fff; /* White background for the main box */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.se {
+    height: 45vh;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    border-radius: 23px 23px 80% 80%;
+    font-style: italic;
+    color: #ecf0f1;
+    display: flex;
+    font-size: 20px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+}
+
+.sec {
+    display: flex;
+    height: auto; /* Let the height adjust based on content */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.so {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center; /* Ensure the content is centered horizontally */
+}
+
+.seco {
+    display: flex;
+    height: 100px;
+    padding: 20px 20px 0;
+}
+
+
+img {
+    background-color: #f39c12; /* A golden color for the image */
+    padding: 2px;
+    border: 1px solid #e67e22; /* Orange border to match the golden color */
+    border-radius: 50%;
+}
+
+.list {
+    flex-direction: column;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.input {
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    color: #34495e; /* Darker text for better visibility */
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    font-size: 16px;
+    background-color: #ecf0f1; /* Light gray background */
+}
+
+.bt {
+    border: 1px solid #1abc9c; /* Teal border for the add button */
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #1abc9c; /* Teal background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 55%; /* Button takes up more width */
+    margin: 10px 0;
+}
+
+.bt:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+.second {
+    height: auto;
+    border-radius: 0 0 20px 20px;
+    padding: 30px;
+    background-color: #cccecf; /* Light background for task container */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    max-height: 300px; /* Set a maximum height for the task container */
+    background: linear-gradient(to top right, #bdc3c7, #d2e3e7); /* Soft gradient from light gray to light blue */
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 0.5s ease;
+}
+
+.task-item:hover {
+    transform: scale(1.05);
+    background-color: #e8f5e9;
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Red for delete button */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.clear-btn {
+    background-color: #3498db; /* Blue for clear button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px; /* Spacing from tasks */
+    width: 40%; /* Same width as other buttons */
+}
+
+.clear-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Animation for adding new tasks */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
